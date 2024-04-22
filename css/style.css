@@ -1,0 +1,124 @@
+*{
+   margin: 0;
+   padding: 0;
+   /* background-color: yellow; */
+   list-style: none;
+}
+
+.logo{
+    height: 40px;
+    border-radius: 50%;
+}
+header{
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: blueviolet;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: end;
+}
+nav li{
+    margin: 0px 10px;
+}
+footer{
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #888FC7;
+    
+}
+footer p{
+    margin: 0;
+    font-size: 11px;
+    color: #fafafa;
+}
+.carousel-item{
+    height: 550px;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.form{
+    width: 95%;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form textarea{
+    margin: 5px;
+    resize: none;
+    border: 0.5px solid #cfcfcf;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.form-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.form button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #888FC7;
+    border: 0.5px solid #797faf;
+    box-shadow: rgba(0, 0, 0, 0.35) 1.95px 1.95px 2.6px;
+}
+.form-inputs input{
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 40px;
+    border: 0.5px solid #cfcfcf;
+}
+.iframe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+.institutional{
+    display: flex;
+    justify-content: center;
+}
+.institutional-text{
+    margin: 20px 0px;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.institutional-text p{
+    text-align: justify;
+}
+.mision-vision-container{
+    display: flex;
+    justify-content: center;
+}
+.mision-vision{
+    height: 450px;
+    width: 50vw;
+}
+.questions{
+    background-color: #fafafa;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
