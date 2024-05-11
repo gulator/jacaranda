@@ -46,7 +46,7 @@ header{
 }
 nav{
     margin-top: 10px;
-    display: flex;
+    display: none;
     width: 85vw;
     justify-content: space-evenly;
     color: var(--primary) !important;
@@ -89,13 +89,15 @@ footer h5{
 }
 .carousel-item-centered img {
     position: absolute;
-    bottom: -30%;
+    /* bottom: -30%; */
     left: 50%;
     transform: translateX(-50%);
+    /* height: calc(100vh - 180px); */
 }
 .blue{
     background-color: var(--accent1);
 }
+
 .red{
     background-color: var(--secondary);
 }
@@ -153,7 +155,7 @@ footer h5{
     border: 0.5px solid var(--primary);
     outline: 0px solid var(--primary);
 }
-.form-inputs input:placeholder-shown, .form textarea:pla{
+.form-inputs input:placeholder-shown, .form textarea:placeholder-shown{
     font-size: 12px;
 }
 .iframe{
@@ -220,6 +222,9 @@ footer h5{
     background-image: url("../img/5620C.jpg");
     background-size: cover;
 }
+.menu-offcanvas-container{
+    display: none;
+}
 .mision-vision p{
     max-width: 75%;
 }
@@ -227,10 +232,24 @@ footer h5{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .niveles-container h2{
     margin: 20px 0px;
 }
+.offcanvas.offcanvas-start{
+    width: 80% !important;
+    background-color: rgba(250, 250, 250, 0.75);
+    font-size: 18px;
+    
+    /* color: rgb(199, 196, 226); */
+}
+
+
+.offcanvas.offcanvas-start a{
+    color: var(--font-dark) ;
+}
+
 .social-media{
     margin-top: 5px;
     width: 25px;
@@ -242,6 +261,16 @@ footer h5{
     cursor: pointer;
     filter: invert(24%) sepia(60%) saturate(2178%) hue-rotate(280deg) brightness(90%) contrast(90%);
 }
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.offcanvas-body svg{
+    margin-right: 5px;
+}
 .questions{
     background-color: var(--neutral1);
     margin: 30px 0px;
@@ -249,4 +278,83 @@ footer h5{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        width: 100px;
+        /* border-radius: 50%; */
+    }
+    .w-100 {
+        width: auto !important;
+    }
+    header{
+        height: 120px;
+        margin: 5px;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    .blue{
+        background-color:none;
+        background-image: url("../img/5564C.jpg");
+        background-size: cover;
+        color: #fafafa; 
+    }
+    .img-mision{
+        display: none;
+    }
+
+    .menu-offcanvas-container{
+        display: block;
+    }
+    .mision-vision-container{
+        flex-direction: column;
+    }
+    .mision-vision{
+        width: 100vw;
+    }
+    .mision-vision p{
+        font-size: 11px;
+        text-align: justify;
+    }
+    .institutional-text p{
+        font-size: 11px;
+    }
+    footer{
+        height: 180px;
+        box-sizing: border-box;
+        padding: 15px 20%;
+        text-align: center;
+    }
+    footer h5{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 11px;
+    }
+    .form{
+        align-items: center;
+    }
+    .form-inputs{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .form textarea{
+        width: 100%;
+    }
+    .carousel-item-centered img{
+        height: calc(100vh - 180px);
+    }
+    
+}
+
+@media (min-width: 600px) {
+    nav{
+        display: flex;
+    }
+    .carousel-item-centered img{
+        bottom:-30%
+    }
+    
 }
